@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+//components
+import {Button} from '../commons/Button.js'
+
+// fucntion
+const onSubmitLogin=(e)=>{
+  e.preventDefault();
+  console.log("hola")
+}
+
 
 export const LoginScreen = () => {
-    return (
+
+  const [disabledButton,setDisabledButton] = useState(false);
+
+  return (
       <div>
         <h3 className="auth__title" >Login</h3>
 
@@ -11,18 +23,26 @@ export const LoginScreen = () => {
            className="auth__input"
            type="text" 
            name="email" 
-          
-           placeholder="email @"
+           placeholder="Email @"
            autoComplete="off"
             />
           <input
            className="auth__input"
             type="password"
             name="password"
-       
-            placeholder="password"
+            autoComplete="off"
+            placeholder="Password"
           />
-          <button className="btn btn-primary btn-block" type="submit" >Login</button>
+           <Button 
+            children="LOGIN"
+           type="submit" 
+           buttonStyle="btn-outline" 
+           buttonSize="btn-large" 
+           onClick={onSubmitLogin}
+           disabled={disabledButton}
+           buttonAligned="center"
+           />
+           {/*<button className="btn btn-primary btn-large"  >Login</button>*/} 
        
           <div className="auth__social-networks" >
             <p>Login with social networks</p>

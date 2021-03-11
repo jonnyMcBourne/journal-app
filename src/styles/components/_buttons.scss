@@ -8,11 +8,21 @@
     &:focus{
         outline:none;
     }
- 
 }
-.btn-block{
-    width:100%;
+//STYLES
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid $primary;
+    color: $primary;
+    border-radius: 2px;
+    &:hover{
+        background-color:$primary;
+        border: 1px solid $primary;
+        color: white;
+    }
 }
+
 .btn-primary{
   background-color: $primary;
   border-radius: 2px;
@@ -25,6 +35,26 @@
 }  
 }
 
+//SIZES
+.btn-large{
+    width:100%;
+}
+.btn-medium{
+    width: 50%;
+}
+//ALIGNED
+.btn-center{
+    display: flex;
+    justify-content: center;
+}
+.btn-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.btn-right{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
