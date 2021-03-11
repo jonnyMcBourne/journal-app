@@ -35,7 +35,7 @@ export const LoginScreen = () => {
           />
            <Button 
             children="LOGIN"
-           type="submit" 
+           buttonType="submit" 
            buttonStyle="btn-outline" 
            buttonSize="btn-large" 
            onClick={onSubmitLogin}
