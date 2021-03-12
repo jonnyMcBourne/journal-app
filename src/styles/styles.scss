@@ -1,5 +1,8 @@
 @import './base/settings';  // colores
 @import './base/base';  // margins, paddings etc.
 //components
+@import './components/jounal';
 @import './components/auth';
-@import './components/buttons'
+@import './components/buttons';
+@import './components/input';
+@import './components/link';

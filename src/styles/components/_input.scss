@@ -1,0 +1,19 @@
+.input-primary{
+    border:0px;
+    border-bottom: 1px solid grey;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    font-size: 1em;
+    transition: border-bottom .3s ease;
+
+    &:focus{
+        border-bottom: 1.5px solid $primary;
+        outline:none;
+    }
+}
+.input-large{
+    width:100%;
+}
+.input-medium{
+    width:75%; 
+}

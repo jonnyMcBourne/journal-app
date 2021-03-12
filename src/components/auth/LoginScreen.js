@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 //components
 import {Button} from '../commons/Button.js'
-
+import {Input} from '../commons/Input.js';
 // fucntion
 const onSubmitLogin=(e)=>{
   e.preventDefault();
@@ -19,30 +19,31 @@ export const LoginScreen = () => {
         <h3 className="auth__title" >Login</h3>
 
         <form>
-          <input
-           className="auth__input"
-           type="text" 
-           name="email" 
-           placeholder="Email @"
-           autoComplete="off"
-            />
-          <input
-           className="auth__input"
-            type="password"
-            name="password"
-            autoComplete="off"
-            placeholder="Password"
+          <Input 
+          placeholder="Email"
+          name="email"
+          type="text"
+          inputStyles="input-primary"
+          inputSize="input-large"
           />
+
+          <Input 
+          placeholder="Password"
+          name="password"
+          type="password"
+          inputStyles="input-primary"
+          inputSize="input-large"
+          />
+
            <Button 
             children="LOGIN"
            buttonType="submit" 
-           buttonStyle="btn-outline" 
+           buttonStyle="btn-primary" 
            buttonSize="btn-large" 
            onClick={onSubmitLogin}
            disabled={disabledButton}
            buttonAligned="center"
            />
-           {/*<button className="btn btn-primary btn-large"  >Login</button>*/} 
        
           <div className="auth__social-networks" >
             <p>Login with social networks</p>
@@ -60,7 +61,9 @@ export const LoginScreen = () => {
             </div>
           </div>
 
-          <Link to="/auth/register">Create new account</Link>
+          <Link
+          className="link"
+           to="/auth/register">Create new account</Link>
         </form>
       </div>
     );
