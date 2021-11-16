@@ -1,0 +1,35 @@
+.notes__main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.notesScreen__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+.notesScreen__title-input, .notesScreen__textarea{
+    border: none;
+    color: $dark-grey;
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid $primary; 
+    }
+}
+.notesScreen__title-input{
+    border-bottom: 1px solid $primary; 
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: .7em;
+}
+.notesScreen__textarea{
+    resize: none;
+    font-size: 1.3em;
+    flex: 1 1 auto;
+    border: none;
+}
+.notesScreen__images img{
+    box-shadow: 5px 5px $dark-grey;
+    height: 9.5em;
+}

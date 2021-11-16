@@ -1,0 +1,29 @@
+.journalentry__content{
+    background-color: white;
+    border-radius: 4px;
+    color: $dark-grey;
+    display: flex;
+    margin-bottom: .8em;
+    overflow: hidden;
+}
+.journalentry__picture{
+    height: 4.7em;
+    width: 4.7em;
+}
+.journalentry__body{
+ padding: .8em;
+}
+.journalentry__title{
+  font-size: 1.1em;
+  font-weight: bold;  
+}
+.journalentry__text-content{
+    font-size: 0.9em;
+}
+.journalentry__entry-date-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
